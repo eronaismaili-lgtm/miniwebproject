@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website-i im i parë</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf2ff;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        .kuti {
+            background-color: white;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: #3344cc;
+        }
+
+        button {
+            background-color: #3344cc;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #222b88;
+        }
+
+        #mesazhi {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kuti">
+        <h1>Mirë se vini në faqen time!</h1>
+
+        <p>Ky është projekti im i parë në HTML, CSS dhe JavaScript.</p>
+
+        <h2>Rreth meje</h2>
+        <p>Jam duke mësuar si të krijoj web.</p>
+
+        <button onclick="pershendet()">Kliko këtu</button>
+
+        <p id="mesazhi"></p>
+    </div>
+
+    <script>
+        function pershendet() {
+            document.getElementById("mesazhi").textContent =
+                "Urime! Butoni po funksionon!";
+        }
+    </script>
+
+</body>
+</html>
